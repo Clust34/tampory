@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
+    </head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+        body {
+            height: 100vh;
+            width: 100vw;
+            background-color: #0093E9;
+            background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+        }
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+            padding-top: 2rem;
+            color: white;
+            transition: all 0.25s;
+        }
+        h1:hover {
+            color: #80D0C7;
+            line-height: 2.5rem;
+        }
+        table {
+            width: 50%;
+            margin: 2rem 25%;
+            text-align: left;
+            background-color: #e8e8e8;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        table thead {
+            line-height: 2rem;
+        }
+        table tbody tr {
+            background-color: white;
+            line-height: 2rem;
+            transition: all 0.25s;
+        }
+        table tbody tr:hover {
+            background-color: #80D0C7;
+            line-height: 2.5rem;
+        }
+        table tbody tr td {
+            padding-left: 1rem;
+        }
+        .mil {
+            display: flex;
+            justify-content: center;
+            gap: 2em;
+        }
+        button {
+            margin-top: 2em;
+            width: 20%;
+            line-height: 2rem;
+            transition: all 0.25s;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        button:hover {
+            background-color: #80D0C7;
+            line-height: 2.5rem;
+            border-radius: 0px 25px 25px 0px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 7px 12px;
+        }
+    </style>
+    <body>
+        <h1>Base de donnée</h1>
+        <div class="mil">
+            <button id="btn1">Nom croissant</button>
+            <button id="btn2">Nom décroissant</button>
+            <button id="btn3">Entreprise croissant</button>
+            <button id="btn4">Entreprise Décroissant</button>
+        </div>
+        <div class="mil">
+            <button id="btn5">Tri nom</button>
+            <button id="btn6">Tri entreprise</button>
+        </div>
+
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Nom Prénom</th>
+                    <th>Entreprise</th>
+                    <th>Numéro de téléphone</th>
+                </tr>
+            </thead>
+            <tbody id="container">
+                <tr>
+                    <td>Utilisateur test</td>
+                    <td>Disney</td>
+                    <td>0000000000</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+    <script src="tp4.js">
+    </script>
+</html>
